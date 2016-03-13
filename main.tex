@@ -1,0 +1,177 @@
+%% start of file `main.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Tate}{Peñaranda}
+\title{IT Professional}                               % optional, remove / comment the line if not wanted
+\address{Rosario}{Argentina}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+54~9~(341)~585~1961}                   % optional, remove / comment the line if not wanted
+\email{tate@xenir.com.ar}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/tpenaranda}                         % optional, remove / comment the line if not wanted
+\skype{skype: tate.penaranda}
+\extrainfo{32 years old}                 % optional, remove / comment the line if not wanted
+\photo[72pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Working Experience}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Summary}
+IT professional with more than 8 years of experience developing software.
+I've vast experience working in Agile projects, being part of near-shore teams.
+I make focus on building high performance, high maintainability, quality and valuable software; looking to accomplish client requirements and deadlines as a top priority.
+I think myself as a strongly results oriented developer, I love to face challenges, solve problems and learn something new every day.
+I always keep a proactive attitude, specially when leading interdisciplinary teams and, of course, caring about interpersonal relationships.\\\\
+\medskip The technologies I've been using the latest years include:
+\begin{itemize}
+  \item Python - Django
+  \item PHP - Zend, Composer, Laravel
+  \item HTML5, CSS3, Bootstrap, JavaScript - JQuery, AngularJS
+  \item TDD, Version Control, Responsive Design, Agile
+  \item LAMP, LEMP, uWSGI, Unicorn, Nginx, WebSockets
+  \item ColdFusion
+\end{itemize}
+\clearpage
+
+\section{Experience}
+\cventry{April 2014\\Present}{DevOps Manager, Full-Stack Developer}{Gonzoft}{Rosario, Argentina}{}{Currently using many different technologies and frameworks (Django, Rails, Laravel).}
+\cventry{August 2011\\Present}{Senior Software Developer}{Velocity Partners}{Rosario, Argentina}{}
+  {
+    Projects:\\
+    \begin{itemize}
+      \item G2 Web Services (Bellevue, WA, USA):
+        \begin{itemize}
+          \item Role: Ruby SDET, Lead PHP Dev. Oct 2011 - Jan 2015.
+          \item Responsibilities: Dev lead for a remote MNT team (4 Devs, 1 QA) located at Hyderabad (India). I joined this project as SDET and finally I ended up as PHP Dev Lead, also I was in charge of the project hand-off at Bellevue, after Velocity and G2 business finished.
+          \item Project: Its main role is to audit and monitor online e-commerce transactions and their merchants in order to avoid counterfeits, data robbery, illegal transactions, content violations, etc.
+          \item Technologies: Ruby (RoR 3, RubyCAS-Server, RSpec, Capybara, Sinatra, Grape) PHP (Zend Framework), PostgreSQL, MySQL, MongoDB, Redis, ElasticSearch, Java and MyBatis ORM.
+        \end{itemize}
+      \item Software Advice (Austin, TX, USA):
+       \begin{itemize}
+          \item Role: Sr. PHP Dev. Feb 2015 - Aug 2015.
+          \item Responsibilities: I had to provide a reliable, fast, maintainable and easy to use PHP library, as a Composer package, for pulling data and generate statistic about products, sellers phone calls and sales.
+          \item Project: Software Advice is a trusted resource for software buyers. It provides detailed reviews and research on thousands of software applications.
+          \item Technologies: PHP, MySQL, CSS3, HTML, SendGrid, Sonar, Jenkins, React, Composer
+        \end{itemize}
+      \item Kinnser (Austin, TX, USA):
+       \begin{itemize}
+          \item Role: ColdFusion Dev. Aug 2015 - Present.
+          \item Responsibilities: MNT for Kinnser web/mobile application.
+          \item Project: Kinnser Software was founded in 2003 to create innovative Web-based solutions that deliver clinical and business results for the home health industry
+          \item Technologies: ColdFusion, SQL Server, AngularJS, Less.
+        \end{itemize}
+    \end{itemize}
+  }
+\cventry{Nov. 2008\\June 2012}{IT Infrastructure Architect}{Eudoro Díaz Public Library}{Rosario, Argentina}{}
+  {
+    https://es.wikipedia.org/wiki/Biblioteca\_Pedagógica\_Eudoro\_Díaz\\
+    \begin{itemize}
+      \item Linux and WS server administration. Services, Databases and Internet spread.
+      \item OpenVPN server, Apache, MySQL and DNS cache management
+      \item Captive Wiitem Fi portal.
+      \item Open source environment migration.
+      \item Scripting in Bash, Perl and Python.
+      \item Joomla implementation.
+    \end{itemize}
+  }
+\cventry{Jan. 2009\\Sept. 2009}{IT Engineer}{Eductrade S.A.}{Quito, Ecuador}{}
+  {
+    Improving the quality of popular education and social community. Installation and updates of computer classrooms. Assembly, installation and pointing of satellite dishes. Satelite link creation. Thin clients installation and configuration. WI-FI LAN creation and configuration. Application server installation and configuration. Communications server installation and configuration. Satellite modem installation and configuration Technologies: Linux (Debian), MS Windows 2008 Server, Thin clients, Satellite Communications, 3G, Structures cabling, Ms VBScript, Hughes HN7000S
+  }
+
+\section{Computer skills}
+\cvitem {Tools}{Jenkins, JIRA, SolidWorks, Proteus}
+\cvitem {Frameworks}{jQuery, Zend, Django, RSpec, Composer, Laravel}
+\cvitem {Languages}{Ruby, Python, ColdFusion, PHP, HTML5, CSS3, ColdFusion, Assembler, C, Perl}
+\cvitem {General}{TDD, Responsive Design, Agile, Microcontrollers, RISC, Scrum, Version Control, Agile Methodologies, Linux, LAMP, LEMP, uWSGI, Unicorn, Nginx, WebSockets}
+
+\section{Certifications}
+\cventry{}{Scrum Master}{}{Scrum Alliance}{}{July 2015 until July 2017}
+
+\section{Publications}
+\cventry{January 3\\2008}{Fermentation temperature controller unit for home brewing using 16F648A}{Revista MASH - Ciencia Cervecera}{https://xenir.com.ar/homebrewing/}{}{ASM coding for a well know RISC architecture, now deprecated.}
+
+\section{Education}
+\cvitem{BEng\\1997--2001}{Instituto Politécnico Superior General San Martín, Rosario, Argentina.}
+
+\section{Languages}
+\cvitemwithcomment{Spanish}{Native}{}
+\cvitemwithcomment{English}{Full professional proficiency}{}
+
+\section{Hobbies}
+\cvitem{Soccer}{I'm argentinian ;)}
+\cvitem{Kayaking}{Paraná River, you're a rock!}
+\cvitem{Running}{Half marathons, my favorites.}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{To}{}
+\date{Date}
+\opening{Opening text,}
+\closing{Closing text,}
+\makelettertitle
+
+Some text...
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `main.tex'.
