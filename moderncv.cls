@@ -232,9 +232,9 @@
 % defines one's home page (optional)
 % usage: \homepage{<url>}
 \newcommand*{\homepage}[1]{\def\@homepage{#1}}
-% defines one's skype (optional)
-% usage: \skype{<skypeid>}
-\newcommand*{\skype}[1]{\def\@skype{#1}}
+% defines one's github (optional)
+% usage: \github{<githubid>}
+\newcommand*{\github}[1]{\def\@github{#1}}
 % defines additional personal information (optional)
 % usage: \extrainfo{<text>}
 \newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}

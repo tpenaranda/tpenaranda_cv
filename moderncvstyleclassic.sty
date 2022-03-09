@@ -97,10 +97,10 @@
   \savebox{\makecvtitledetailsbox}{%
     \addressfont\color{color2}%
     \begin{tabular}[b]{@{}r@{}}%
-      \phonesdetails% needed to be pre-rendered as loops and tabulars seem to conflict
       \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
-      \ifthenelse{\isundefined{\@skype}}{}{\makenewline\@skype}%
+      \phonesdetails% needed to be pre-rendered as loops and tabulars seem to conflict
       \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\httplink{\@homepage}}%
+      \ifthenelse{\isundefined{\@github}}{}{\makenewline\@github}%
       \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}%
       \ifthenelse{\isundefined{\@addresscity}}{}{\makenewline\addresssymbol\@addresscity%
         \ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\@addresscountry}}% if \addresscity is defined, \addresscountry will always be defined but could be empty
